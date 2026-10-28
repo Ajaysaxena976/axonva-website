@@ -1,0 +1,109 @@
+/* Axonva Ventures - Design System & Color Tokens
+   All brand colors, gradients, and theme tokens are defined here.
+   Edit values here to change the entire site's theme globally.
+*/
+
+:root {
+  /* Brand Primary Colors (Extracted from 3D Glowing Brand Logo) */
+  --brand-orange-primary: #ff5722;
+  --brand-orange-light: #ff7a00;
+  --brand-orange-warm: #ff9a1f;
+  --brand-yellow-gold: #ffb703;
+  --brand-red-crimson: #d40d0d;
+  --brand-red-deep: #6a0716;
+
+  /* Cosmic Indigo & Blue Gradients */
+  --brand-blue-deep: #0a0830;
+  --brand-blue-cosmic: #13114a;
+  --brand-blue-electric: #2563eb;
+  --brand-blue-vivid: #3b82f6;
+  --brand-purple-vivid: #7c3aed;
+  --brand-cyan-neon: #06b6d4;
+
+  /* Surfaces & Backgrounds */
+  --bg-primary: #060517;
+  --bg-secondary: #0b092b;
+  --bg-tertiary: #120f3d;
+  --bg-card: rgba(18, 15, 61, 0.65);
+  --bg-card-hover: rgba(28, 23, 85, 0.85);
+  --bg-glass: rgba(255, 255, 255, 0.04);
+  --bg-glass-strong: rgba(255, 255, 255, 0.08);
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.16);
+  --border-glow: rgba(255, 87, 34, 0.35);
+  --border-glow-blue: rgba(59, 130, 246, 0.35);
+
+  /* Typography Colors */
+  --text-white: #ffffff;
+  --text-light: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --text-accent-orange: #ff9a1f;
+  --text-accent-blue: #60a5fa;
+
+  /* Gradients */
+  --gradient-fire: linear-gradient(135deg, #ffb703 0%, #ff5722 45%, #d40d0d 100%);
+  --gradient-flame: linear-gradient(90deg, #ffa21f 0%, #ff3b1d 60%, #d40d0d 100%);
+  --gradient-cosmic: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #ff5722 100%);
+  --gradient-hero: radial-gradient(circle at 50% 20%, rgba(255, 87, 34, 0.18) 0%, rgba(37, 99, 235, 0.12) 40%, rgba(6, 5, 23, 0) 80%);
+  --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%);
+  --gradient-border: linear-gradient(135deg, rgba(255, 122, 0, 0.6), rgba(37, 99, 235, 0.4), rgba(255, 255, 255, 0.1));
+
+  /* Shadows & Glows */
+  --glow-fire-sm: 0 0 15px rgba(255, 87, 34, 0.4);
+  --glow-fire-lg: 0 10px 40px rgba(255, 87, 34, 0.35);
+  --glow-blue-lg: 0 10px 40px rgba(37, 99, 235, 0.3);
+  --glow-cosmic: 0 0 60px rgba(124, 58, 237, 0.25);
+  --card-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+}
+
+/* Custom Utilities based on theme tokens */
+.bg-theme-primary {
+  background-color: var(--bg-primary);
+}
+
+.bg-theme-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.bg-theme-card {
+  background-color: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.border-theme-glow {
+  border-color: var(--border-glow);
+}
+
+.border-theme-subtle {
+  border-color: var(--border-subtle);
+}
+
+.text-gradient-fire {
+  background: var(--gradient-fire);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cosmic {
+  background: var(--gradient-cosmic);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-box-fire {
+  box-shadow: var(--glow-fire-lg);
+}
+
+.glow-box-blue {
+  box-shadow: var(--glow-blue-lg);
+}

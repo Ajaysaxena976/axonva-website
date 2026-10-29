@@ -29,7 +29,7 @@ export default function Badge({
 
   return (
     <div
-      className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border text-xs font-semibold tracking-wide backdrop-blur-md transition-all ${current.wrap} ${className}`}
+      className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border text-xs font-inter font-medium tracking-wide backdrop-blur-md transition-all ${current.wrap} ${className}`}
     >
       {pulse && (
         <span className="relative flex h-2 w-2">

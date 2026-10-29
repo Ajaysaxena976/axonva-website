@@ -6,10 +6,9 @@
 export const SITE_CONFIG = {
   name: "Axonva Ventures",
   shortName: "Axonva",
-  legalName: "Axonva Ventures Pvt. Ltd.",
+  legalName: "Axonva Ventures",
   tagline: "Building Digital Presence. Driving Measurable Growth.",
-  corePromiseEn: "We help businesses build their digital presence, reach the right audience and grow online.",
-  // corePromiseHi: "हम बिज़नेस को उनकी डिजिटल पहचान बनाने, सही ऑडियंस तक पहुँचने और ऑनलाइन तेज़ी से ग्रो करने में मदद करते हैं।",
+  corePromiseEn: "We help businesses to reach the right audience and grow online.",
   consultancyType: "Full-Stack Tech & Performance Growth Consultancy",
   yearEstablished: "2024",
 };

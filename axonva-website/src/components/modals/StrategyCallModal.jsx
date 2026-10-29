@@ -120,7 +120,7 @@ _Hello Axonva Team, I have booked a Strategy Consultation Call as per the detail
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
 
-                <h3 className="text-2xl font-black text-white">
+                <h3 className="font-sora font-semibold text-2xl text-white">
                   Strategy Call Requested!
                 </h3>
 
@@ -159,10 +159,10 @@ _Hello Axonva Team, I have booked a Strategy Consultation Call as per the detail
                     </Badge>
                   </div>
 
-                  <h3 className="text-2xl font-black text-white tracking-tight">
+                  <h3 className="font-sora font-semibold text-2xl text-white tracking-tight">
                     Book Your Strategy Call
                   </h3>
-                  <p className="text-xs sm:text-sm text-slate-300 mt-1">
+                  <p className="font-inter font-normal text-xs sm:text-sm text-slate-300 mt-1">
                     Fill this quick form. Your slot request will instantly send on WhatsApp.
                   </p>
                 </div>
@@ -170,7 +170,7 @@ _Hello Axonva Team, I have booked a Strategy Consultation Call as per the detail
                 {/* 1. Name & Phone */}
                 <div className="space-y-3">
                   <div>
-                    <label className="text-xs font-semibold text-slate-300 block mb-1">
+                    <label className="text-xs font-inter font-medium text-slate-300 block mb-1">
                       Your Name *
                     </label>
                     <div className="relative">
@@ -187,7 +187,7 @@ _Hello Axonva Team, I have booked a Strategy Consultation Call as per the detail
                   </div>
 
                   <div>
-                    <label className="text-xs font-semibold text-slate-300 block mb-1">
+                    <label className="text-xs font-inter font-medium text-slate-300 block mb-1">
                       Phone / WhatsApp Number *
                     </label>
                     <div className="relative">
@@ -206,7 +206,7 @@ _Hello Axonva Team, I have booked a Strategy Consultation Call as per the detail
 
                 {/* 2. Preferred Call Time Slot */}
                 <div>
-                  <label className="text-xs font-semibold text-slate-300 block mb-1.5 flex items-center justify-between">
+                  <label className="text-xs font-inter font-medium text-slate-300 block mb-1.5 flex items-center justify-between">
                     <span>When should we call you? (Preferred Time) *</span>
                     <span className="text-[10px] text-[#ffa21f] font-mono">1-Click Select</span>
                   </label>
@@ -227,11 +227,11 @@ _Hello Axonva Team, I have booked a Strategy Consultation Call as per the detail
                         >
                           <div className="flex items-center gap-1.5">
                             <span className="text-sm">{slot.icon}</span>
-                            <span className={`text-xs font-bold ${isSelected ? 'text-white' : 'text-slate-200'}`}>
+                            <span className={`text-xs font-inter font-semibold ${isSelected ? 'text-white' : 'text-slate-200'}`}>
                               {slot.label}
                             </span>
                           </div>
-                          <span className="text-[10px] text-slate-400 mt-0.5">
+                          <span className="text-[10px] text-slate-400 mt-0.5 font-inter">
                             {slot.desc}
                           </span>
                         </button>
@@ -242,7 +242,7 @@ _Hello Axonva Team, I have booked a Strategy Consultation Call as per the detail
 
                 {/* 3. Quick Topic Pills */}
                 <div>
-                  <label className="text-xs font-semibold text-slate-300 block mb-1.5">
+                  <label className="text-xs font-inter font-medium text-slate-300 block mb-1.5">
                     What would you like to discuss?
                   </label>
                   <div className="flex flex-wrap gap-1.5">
@@ -253,9 +253,9 @@ _Hello Axonva Team, I have booked a Strategy Consultation Call as per the detail
                           key={topic}
                           type="button"
                           onClick={() => setSelectedTopic(topic)}
-                          className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
+                          className={`font-inter font-semibold px-3 py-1.5 rounded-lg text-xs transition-all cursor-pointer ${
                             isSelected
-                              ? 'bg-[#ff5722] text-white font-bold shadow-sm'
+                              ? 'bg-[#ff5722] text-white shadow-sm'
                               : 'bg-white/[0.04] text-slate-300 hover:text-white border border-white/10'
                           }`}
                         >

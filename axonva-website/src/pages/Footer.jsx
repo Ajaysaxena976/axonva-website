@@ -45,67 +45,31 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-[#040310] border-t border-white/10 pt-16 pb-12 overflow-hidden z-10">
+    <footer className="relative bg-[#040310] border-t border-white/10 pt-8 pb-3 overflow-hidden z-10">
       {/* Ambient background glow in footer */}
       <div className="absolute bottom-0 left-1/4 w-[500px] h-[300px] bg-[#ff5722]/10 blur-[130px] pointer-events-none rounded-full" />
       <div className="absolute top-0 right-1/4 w-[400px] h-[300px] bg-[#2563eb]/10 blur-[120px] pointer-events-none rounded-full" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Top Brand & Promise Card */}
-        <div className="p-8 rounded-3xl bg-gradient-to-r from-[#120f3d]/80 via-[#0d0a2d]/80 to-[#190c30]/80 border border-white/10 backdrop-blur-xl mb-14 shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-[#ff5722]/20 to-transparent rounded-full blur-3xl pointer-events-none" />
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-7">
-              <div className="flex items-center gap-3 mb-4">
-                <Logo height={42} />
-                <Badge variant="fire">Core Promise</Badge>
-              </div>
-
-              <blockquote className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-snug">
-                “{SITE_CONFIG.corePromiseEn}”
-              </blockquote>
-              <p className="text-xs sm:text-sm text-[#ffa21f]/90 mt-2 font-medium">
-                {SITE_CONFIG.corePromiseHi}
-              </p>
-            </div>
-
-            <div className="lg:col-span-5 flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-3.5">
-              <a
-                href={SOCIAL_LINKS.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-emerald-600/90 hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-600/30 border border-emerald-400/30 cursor-pointer"
-              >
-                <MessageSquare className="w-4 h-4" />
-                <span>Instant WhatsApp Consult</span>
-              </a>
-
-              <button
-                type="button"
-                onClick={openStrategyModal}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-[#ffa21f] via-[#ff5722] to-[#d40d0d] hover:brightness-110 transition-all shadow-lg shadow-[#ff5722]/30 border border-white/20 cursor-pointer"
-              >
-                <Sparkles className="w-4 h-4" />
-                <span>Book Strategy Call</span>
-              </button>
-            </div>
-          </div>
-        </div>
+       
 
         {/* Multi-Column Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-8 pb-4 border-b border-white/10">
           {/* Column 1: Company Profile (4 cols) */}
-          <div className="lg:col-span-4 flex flex-col gap-4">
-            <h4 className="text-lg font-bold text-white tracking-tight flex items-center gap-2">
-              <span>{SITE_CONFIG.name}</span>
-            </h4>
-            <p className="text-sm text-slate-400 leading-relaxed">
+
+<div className='pl-16 md:pl-24'>
+  <Logo/>
+</div>
+
+          <div className="lg:col-span-4 flex flex-col gap-1 md:pt-18">
+      
+            {/* <p className="text-sm  text-slate-400 leading-relaxed ">
               We are an integrated digital growth consultancy combining full-stack web engineering, native mobile apps, result-obsessed performance marketing, and creative 3D brand experiences.
-            </p>
+            </p> */}
 
             {/* Tech Stack Mini Tags */}
-            <div className="mt-2">
+            {/* <div className="mt-2">
               <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-2">
                 Engineered With
               </span>
@@ -119,7 +83,7 @@ export default function Footer() {
                   </span>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Social Icons */}
             <div className="pt-2">
@@ -154,7 +118,7 @@ export default function Footer() {
                 <li key={service.id}>
                   <Link
                     to={`/services#${service.id}`}
-                    className="text-xs sm:text-sm text-slate-400 hover:text-white hover:translate-x-1 inline-flex items-center gap-1.5 transition-all"
+                    className="font-inter font-medium text-xs sm:text-sm text-slate-400 hover:text-white hover:translate-x-1 inline-flex items-center gap-1.5 transition-all"
                   >
                     <span className="text-[#ff9a1f] text-[10px]">›</span>
                     <span>{service.title}</span>
@@ -163,28 +127,28 @@ export default function Footer() {
               ))}
             </ul>
 
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-3 flex items-center gap-2">
+            {/* <h4 className="font-sora font-semibold text-sm text-white uppercase tracking-wider mb-3 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#ff3b1d]" />
               Marketing & Branding
-            </h4>
-            <ul className="space-y-2.5">
+            </h4> */}
+            {/* <ul className="space-y-2.5">
               {CORE_SERVICES.filter((s) => s.categoryId === 'marketing-branding').map((service) => (
                 <li key={service.id}>
                   <Link
                     to={`/services#${service.id}`}
-                    className="text-xs sm:text-sm text-slate-400 hover:text-white hover:translate-x-1 inline-flex items-center gap-1.5 transition-all"
+                    className="font-inter font-medium text-xs sm:text-sm text-slate-400 hover:text-white hover:translate-x-1 inline-flex items-center gap-1.5 transition-all"
                   >
                     <span className="text-[#ff7a00] text-[10px]">›</span>
                     <span>{service.title}</span>
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
 
           {/* Column 3: Performance, Search & Marketplace (2 cols) */}
-          <div className="lg:col-span-2">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4 flex items-center gap-2">
+          {/* <div className="lg:col-span-2">
+            <h4 className="font-sora font-semibold text-sm text-white uppercase tracking-wider mb-4 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#3b82f6]" />
               Growth & Platforms
             </h4>
@@ -198,7 +162,7 @@ export default function Footer() {
                 <li key={service.id}>
                   <Link
                     to={`/services#${service.id}`}
-                    className="text-xs sm:text-sm text-slate-400 hover:text-white hover:translate-x-1 inline-flex items-center gap-1.5 transition-all"
+                    className="font-inter font-medium text-xs sm:text-sm text-slate-400 hover:text-white hover:translate-x-1 inline-flex items-center gap-1.5 transition-all"
                   >
                     <span className="text-[#60a5fa] text-[10px]">›</span>
                     <span>{service.title}</span>
@@ -208,13 +172,13 @@ export default function Footer() {
               <li>
                 <Link
                   to="/services"
-                  className="text-xs font-semibold text-[#ffa21f] hover:underline inline-flex items-center gap-1 pt-2"
+                  className="font-inter font-medium text-xs text-[#ffa21f] hover:underline inline-flex items-center gap-1 pt-2"
                 >
                   View All Services <ExternalLink className="w-3 h-3" />
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Column 4: Contact & Location Info (3 cols) */}
           <div className="lg:col-span-3">
@@ -253,7 +217,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar: Copyright & Back-to-Top */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className=" flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
             © 2025–2026 {SITE_CONFIG.legalName}. All rights reserved.
           </div>

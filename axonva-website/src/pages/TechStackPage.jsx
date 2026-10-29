@@ -107,22 +107,20 @@ export default function TechStackPage() {
       : stackSections.filter((s) => s.id === activeFilter);
 
   return (
-    <div className="relative py-12 lg:py-20">
+    <div className="relative py-6 lg:py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <Badge variant="fire" className="mb-4">
-            Engineering & Technology Arsenal
-          </Badge>
+        
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+          <h1 className="font-sora font-extrabold text-4xl sm:text-5xl lg:text-4xl text-white tracking-tight leading-tight">
             Modern Tech Stacks Built for{' '}
             <span className="text-gradient-fire block mt-1">
               Scale, Speed & High Conversion
             </span>
           </h1>
 
-          <p className="mt-5 text-base sm:text-lg text-slate-300 leading-relaxed">
+          <p className="font-inter font-normal mt-5 text-[14px] text-slate-300 leading-relaxed">
             We don't use outdated, bloated website builders. Our software engineers build production-grade web systems in <strong className="text-white font-semibold">HTML, CSS, JS, React, Next.js, MERN Stack</strong>, and cross-platform apps in <strong className="text-white font-semibold">React Native (iOS & Android)</strong>.
           </p>
         </div>
@@ -135,7 +133,7 @@ export default function TechStackPage() {
               <button
                 key={cat.id}
                 onClick={() => setActiveFilter(cat.id)}
-                className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 ${
+                className={`font-inter font-semibold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all cursor-pointer flex items-center gap-2 ${
                   isActive
                     ? 'bg-gradient-to-r from-[#ffa21f] via-[#ff5722] to-[#d40d0d] text-white shadow-lg shadow-[#ff5722]/30 border border-white/20'
                     : 'bg-[#120f3d]/70 text-slate-300 hover:text-white hover:bg-[#1a1656] border border-white/10'
@@ -160,10 +158,10 @@ export default function TechStackPage() {
                         <sec.icon className="w-6 h-6" />
                       </div>
                       <div>
-                        <span className="text-xs font-bold text-[#ffa21f] uppercase tracking-wider">
+                        <span className="text-xs font-inter font-medium text-[#ffa21f] uppercase tracking-wider">
                           Axonva Core Pillar
                         </span>
-                        <h2 className="text-2xl font-black text-white tracking-tight">
+                        <h2 className="font-sora font-bold text-2xl text-white tracking-tight">
                           {sec.title}
                         </h2>
                       </div>
@@ -199,7 +197,7 @@ export default function TechStackPage() {
                         className="p-3.5 rounded-xl bg-white/[0.03] border border-white/5 hover:border-[#ff5722]/40 transition-colors flex flex-col justify-between group"
                       >
                         <div className="flex items-center justify-between">
-                          <span className="font-bold text-sm text-white group-hover:text-[#ffa21f] transition-colors">
+                          <span className="font-sora font-semibold text-sm text-white group-hover:text-[#ffa21f] transition-colors">
                             {tech.name}
                           </span>
                           <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.05] text-[#ff7a00]">
@@ -219,9 +217,8 @@ export default function TechStackPage() {
         </div>
 
         {/* Engineering Guarantees Strip */}
-        <div className="mt-20">
+        <div className="mt-10">
           <SectionHeader
-            badge="Engineering Standards"
             title="Our Non-Negotiable"
             highlight="Code Quality Guarantees"
             description="When you build software with Axonva, you receive an enterprise asset you actually own."
@@ -262,9 +259,6 @@ export default function TechStackPage() {
 
         {/* Bottom CTA Banner */}
         <div className="mt-20 p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-[#170e42] via-[#24113b] to-[#140b36] border border-[#ff5722]/40 text-center relative overflow-hidden">
-          <Badge variant="fire" className="mb-4">
-            Build Your Next Product
-          </Badge>
           <h2 className="text-2xl sm:text-4xl font-black text-white">
             Have a Tech Specification Ready or Need Architecture Advice?
           </h2>

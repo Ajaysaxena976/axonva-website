@@ -39,6 +39,7 @@ import {
   FAQS,
 } from '../constants';
 
+
 // Icon map for core services
 const iconMap = {
   Globe: Globe,
@@ -63,12 +64,16 @@ export default function Home() {
     (s) => s.categoryId === activeCategory
   );
 
+
   return (
     <div className="relative overflow-hidden">
+
+  
+
       {/* ========================================================
           1. HERO SECTION (High Impact, 3D Glow, Radiant Mesh)
       ======================================================== */}
-      <section className="relative min-h-[92vh] flex items-center justify-center pt-8 pb-16 lg:py-24">
+      <section className="relative min-h-[92vh] flex items-center justify-center pt-4 pb-8 lg:py-12">
         {/* Glow backdrop behind hero */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-gradient-to-tr from-[#ff5722]/15 via-[#7c3aed]/10 to-[#2563eb]/15 rounded-full blur-[140px] pointer-events-none" />
 
@@ -81,21 +86,12 @@ export default function Home() {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="lg:col-span-7 text-center lg:text-left"
             >
-              {/* Startup Badge */}
-              <div className="inline-flex items-center gap-2 mb-6">
-                <Badge variant="fire">
-                  <span className="flex items-center gap-1.5 font-bold">
-                    <Sparkles className="w-3.5 h-3.5 text-[#ffb703]" />
-                    Next-Gen Tech & Performance Growth Consultancy
-                  </span>
-                </Badge>
-              </div>
-
+            
               {/* Main Headline */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white tracking-tight leading-[1.08]">
-                We Engineer Code.{' '}
+              <h1 className="font-sora font-extrabold text-3xl sm:text-5-2xl lg:text-3xl xl:text-3xl text-white tracking-tight leading-[1.08]">
+                We Build Digital Experiences{' '}
                 <span className="text-gradient-fire block mt-1">
-                  We Drive Profitable Growth.
+               That Drives <br className='md:hidden'/> Revenue
                 </span>
               </h1>
 
@@ -103,9 +99,9 @@ export default function Home() {
               <div className="mt-6 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#120f3d]/90 via-[#18134d]/80 to-[#210c30]/90 border border-[#ff5722]/30 shadow-[0_10px_35px_-10px_rgba(255,87,34,0.3)] backdrop-blur-xl">
                 <div className="flex items-center gap-2 text-xs font-bold text-[#ffa21f] uppercase tracking-wider mb-1.5">
                   <span className="w-2 h-2 rounded-full bg-[#ff5722] animate-ping" />
-                  Our Core Promise · हमारा संकल्प
+                  Our Core Promise
                 </div>
-                <p className="text-base sm:text-lg font-semibold text-white leading-snug">
+                <p className="text-base sm:text-lg md:text-sm text-white leading-snug">
                   “{SITE_CONFIG.corePromiseEn}”
                 </p>
                 <p className="text-xs sm:text-sm text-slate-300/80 mt-1">
@@ -114,9 +110,14 @@ export default function Home() {
               </div>
 
               {/* Tagline / Subtitle */}
-              <p className="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                From bespoke <strong className="text-white font-semibold">Next.js & React Native</strong> platforms to high-ROAS <strong className="text-white font-semibold">Meta & Google Ads</strong> and e-commerce dominance, we help ambitious businesses scale into unstoppable market leaders.
-              </p>
+              {/* <p className="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                From  <strong className="text-white font-semibold">Next.js & React Native</strong> platforms to high-ROAS <strong className="text-white font-semibold">Meta & Google Ads</strong> and e-commerce dominance, we help ambitious businesses scale into unstoppable market leaders.
+              </p> */}
+
+
+<p className="mt-6 text-[14px] text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+  We build <strong className="text-white font-semibold">powerful digital experiences</strong> and deliver <strong className="text-white font-semibold">marketing that drives growth.</strong>
+</p>
 
               {/* Action Buttons */}
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -158,7 +159,7 @@ export default function Home() {
             </motion.div>
 
             {/* Right Interactive 3D Card Cluster Visual */}
-            <motion.div
+          <motion.div
               initial={{ opacity: 0, scale: 0.92 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
@@ -167,16 +168,16 @@ export default function Home() {
               <Card3D intensity={18} className="w-full">
                 <div className="flex flex-col gap-5 p-2">
                   {/* Top Bar with Brand Indicator */}
-                  <div className="flex items-center justify-between pb-3 border-b border-white/10">
+                  <div className="flex items-center justify-between pb-3 ">
                     <div className="flex items-center gap-2.5">
-                      <div className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse" />
-                      <span className="text-xs font-bold text-white tracking-wider uppercase">
+                      {/* <div className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse" /> */}
+                      {/* <span className="text-xs font-bold text-white tracking-wider uppercase">
                         Axonva Growth Telemetry
-                      </span>
+                      </span> */}
                     </div>
-                    <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-white/[0.05] text-[#ffa21f] border border-white/10">
+                    {/* <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-white/[0.05] text-[#ffa21f] border border-white/10">
                       LIVE BENCHMARK
-                    </span>
+                    </span> */}
                   </div>
 
                   {/* Central Animated Visual - 3D Logo Showcase */}
@@ -198,10 +199,10 @@ export default function Home() {
                   {/* Simulated Growth Telemetry Cards */}
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl bg-white/[0.04] border border-white/5 flex flex-col">
-                      <span className="text-[10px] uppercase font-semibold text-slate-400">
+                      <span className="text-[10px] uppercase font-inter font-medium text-slate-400">
                         Paid Ads ROAS
                       </span>
-                      <div className="text-xl font-black text-white mt-0.5 flex items-center gap-1.5">
+                      <div className="text-xl font-sora font-extrabold text-white mt-0.5 flex items-center gap-1.5">
                         <span className="text-gradient-fire">5.2x</span>
                         <span className="text-[10px] text-emerald-400 font-bold">+340%</span>
                       </div>
@@ -209,10 +210,10 @@ export default function Home() {
                     </div>
 
                     <div className="p-3 rounded-xl bg-white/[0.04] border border-white/5 flex flex-col">
-                      <span className="text-[10px] uppercase font-semibold text-slate-400">
+                      <span className="text-[10px] uppercase font-inter font-medium text-slate-400">
                         Web & App Speed
                       </span>
-                      <div className="text-xl font-black text-white mt-0.5 flex items-center gap-1.5">
+                      <div className="text-xl font-sora font-extrabold text-white mt-0.5 flex items-center gap-1.5">
                         <span className="text-blue-400">99/100</span>
                         <span className="text-[10px] text-emerald-400 font-bold">Fast</span>
                       </div>
@@ -221,19 +222,21 @@ export default function Home() {
                   </div>
 
                   {/* Bottom Notification Pill */}
-                  <div className="p-2.5 rounded-xl bg-[#ff5722]/10 border border-[#ff5722]/30 flex items-center justify-between text-xs">
+                  {/* <div className="p-2.5 rounded-xl bg-[#ff5722]/10 border border-[#ff5722]/30 flex items-center justify-between text-xs">
                     <span className="text-slate-300 font-medium flex items-center gap-2">
                       <Zap className="w-3.5 h-3.5 text-[#ff7a00]" />
                       Organized Into 5 Growth Categories
                     </span>
                     <span className="text-[11px] font-bold text-[#ffa21f]">10 Services</span>
-                  </div>
+                  </div> */}
                 </div>
               </Card3D>
             </motion.div>
           </div>
         </div>
       </section>
+
+
 
       {/* ========================================================
           2. TECH & CHANNEL MARQUEE STRIP
@@ -295,11 +298,10 @@ export default function Home() {
       {/* ========================================================
           3. CATEGORIZED CORE SERVICES (The user's key vision)
       ======================================================== */}
-      <section id="services" className="relative py-20 lg:py-28">
+      <section id="services" className="relative py-8 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <SectionHeader
-            badge="Strategic Architecture"
-            title="Axonva Core Services —"
+            title="Axonva Core Services"
             highlight="Organized for Real Impact"
             description="We don't sell random disjointed services. We organize technology, performance advertising, e-commerce, and brand growth into structured strategic pillars for maximum synergy."
           />
@@ -312,7 +314,7 @@ export default function Home() {
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`px-5 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 ${
+                  className={`font-inter font-semibold px-5 py-3 rounded-2xl text-xs sm:text-sm transition-all cursor-pointer flex items-center gap-2 ${
                     isActive
                       ? 'bg-gradient-to-r from-[#ffa21f] via-[#ff5722] to-[#d40d0d] text-white shadow-xl shadow-[#ff5722]/30 scale-105 border border-white/20'
                       : 'bg-[#120f3d]/70 text-slate-300 hover:text-white hover:bg-[#1a1656] border border-white/10'
@@ -331,13 +333,13 @@ export default function Home() {
             return (
               <div className="mb-10 p-5 rounded-2xl bg-white/[0.03] border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
-                  <div className="text-xs font-bold text-[#ffa21f] uppercase tracking-wider">
+                  <div className="text-xs font-inter font-medium text-[#ffa21f] uppercase tracking-wider">
                     {currentCat?.badge}
                   </div>
-                  <h3 className="text-lg font-bold text-white mt-0.5">
+                  <h3 className="font-sora font-semibold text-lg text-white mt-0.5">
                     {currentCat?.name}
                   </h3>
-                  <p className="text-sm text-slate-300 mt-1">
+                  <p className="font-inter font-normal text-sm text-slate-300 mt-1">
                     {currentCat?.description}
                   </p>
                 </div>
@@ -375,7 +377,7 @@ export default function Home() {
                               <span className="text-[11px] font-mono font-bold text-[#ffa21f] uppercase tracking-widest">
                                 Service {service.serviceNumber}
                               </span>
-                              <h4 className="text-xl font-bold text-white tracking-tight">
+                              <h4 className="font-sora font-semibold text-xl text-white tracking-tight">
                                 {service.title}
                               </h4>
                             </div>
@@ -447,7 +449,7 @@ export default function Home() {
           4. DEDICATED PAGES SHOWCASE SPOTLIGHT
           (Spotlights for Tech Stack & Growth Pages)
       ======================================================== */}
-      <section className="relative py-20 lg:py-24 bg-[#080721]/70 border-y border-white/10">
+      <section className="relative py-8 lg:py-12 bg-[#080721]/70 border-y border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <SectionHeader
             badge="Engineering & Growth"
@@ -466,10 +468,10 @@ export default function Home() {
                       <Globe className="w-6 h-6" />
                     </div>
                     <div>
-                      <span className="text-xs font-bold text-[#ffa21f] uppercase tracking-wider">
+                      <span className="text-xs font-inter font-medium text-[#ffa21f] uppercase tracking-wider">
                         Dedicated Portal
                       </span>
-                      <h3 className="text-2xl font-black text-white">
+                      <h3 className="font-sora font-semibold text-2xl text-white">
                         Full-Stack Tech Stack
                       </h3>
                     </div>
@@ -511,10 +513,10 @@ export default function Home() {
                       <BarChart3 className="w-6 h-6" />
                     </div>
                     <div>
-                      <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider">
+                      <span className="text-xs font-inter font-medium text-emerald-400 uppercase tracking-wider">
                         Telemetry & ROI
                       </span>
-                      <h3 className="text-2xl font-black text-white">
+                      <h3 className="font-sora font-semibold text-2xl text-white">
                         Growth Framework & Motion Graph
                       </h3>
                     </div>
@@ -558,13 +560,13 @@ export default function Home() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {IMPACT_METRICS.map((metric, i) => (
               <div key={i} className="p-4 rounded-2xl bg-white/[0.03] border border-white/5">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-sora font-extrabold text-white tracking-tight">
                   <span className="text-gradient-fire">{metric.value}</span>
                 </div>
-                <div className="text-sm font-bold text-white mt-1">
+                <div className="text-sm font-inter font-medium text-white mt-1">
                   {metric.label}
                 </div>
-                <div className="text-xs text-slate-400 mt-0.5">
+                <div className="text-xs font-inter font-normal text-slate-400 mt-0.5">
                   {metric.detail}
                 </div>
               </div>
@@ -576,7 +578,7 @@ export default function Home() {
       {/* ========================================================
           6. CLIENT TESTIMONIALS (Social Proof)
       ======================================================== */}
-      <section className="relative py-20 lg:py-28">
+      <section className="relative py-8 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <SectionHeader
             badge="Founder Testimonials"
@@ -623,7 +625,7 @@ export default function Home() {
       {/* ========================================================
           7. FREQUENTLY ASKED QUESTIONS (Accordion)
       ======================================================== */}
-      <section className="relative py-16 lg:py-24 bg-[#080721]/60 border-y border-white/10">
+      <section className="relative py-8 lg:py-12 bg-[#080721]/60 border-y border-white/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <SectionHeader
             badge="Clear Answers"
@@ -676,7 +678,7 @@ export default function Home() {
       {/* ========================================================
           8. HIGH IMPACT CTA BANNER
       ======================================================== */}
-      <section className="relative py-20 lg:py-28 overflow-hidden">
+      <section className="relative py-8 lg:py-14 overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="p-8 sm:p-14 rounded-3xl bg-gradient-to-r from-[#170e42] via-[#24113b] to-[#140b36] border border-[#ff5722]/40 shadow-[0_20px_60px_-15px_rgba(255,87,34,0.3)] relative overflow-hidden text-center">
             {/* Glowing orbs */}
@@ -688,11 +690,11 @@ export default function Home() {
                 Ready to Grow Online?
               </Badge>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+              <h2 className="font-sora font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
                 Let's Build Your Digital Presence & Scale Your Business.
               </h2>
 
-              <p className="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed">
+              <p className="font-inter font-normal mt-4 text-sm sm:text-base text-slate-300 leading-relaxed">
                 Connect with our founders and technical team for a free 30-minute growth roadmap. No obligations, zero fluff—just pure actionable strategy.
               </p>
 
@@ -711,7 +713,7 @@ export default function Home() {
                   href={SOCIAL_LINKS.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl text-base font-bold text-white bg-emerald-600/90 hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-600/30 border border-emerald-400/30 cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl text-base font-sora font-semibold text-white bg-emerald-600/90 hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-600/30 border border-emerald-400/30 cursor-pointer"
                 >
                   <MessageSquare className="w-5 h-5" />
                   <span>WhatsApp Chat</span>

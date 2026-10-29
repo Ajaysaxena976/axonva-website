@@ -11,15 +11,15 @@ export default function NotFound() {
           404 Error · Lost in Space
         </Badge>
 
-        <h1 className="text-7xl sm:text-9xl font-black text-white tracking-tight text-gradient-fire">
+        <h1 className="font-sora font-extrabold text-7xl sm:text-9xl text-white tracking-tight text-gradient-fire">
           404
         </h1>
 
-        <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-4">
+        <h2 className="font-sora font-bold text-2xl sm:text-3xl text-white mt-4">
           Page Not Found
         </h2>
 
-        <p className="mt-3 text-slate-300 text-sm leading-relaxed">
+        <p className="font-inter font-normal mt-3 text-slate-300 text-sm leading-relaxed">
           The page you are looking for doesn't exist, has been relocated, or is temporarily unavailable. Let's get you back on track.
         </p>
 

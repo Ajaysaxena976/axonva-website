@@ -73,11 +73,11 @@ export default function GrowthGraph() {
             <div>
               <div className="flex items-center gap-2">
                 <BarChart3 className="w-5 h-5 text-[#ff7a00]" />
-                <h3 className="text-xl font-bold text-white tracking-tight">
+                <h3 className="font-sora font-semibold text-xl text-white tracking-tight">
                   Simulated 6-Month Client Scaling Trajectory
                 </h3>
               </div>
-              <p className="text-xs sm:text-sm text-slate-400 mt-1">
+              <p className="font-inter font-normal text-xs sm:text-sm text-slate-400 mt-1">
                 Real benchmark growth achieved by businesses under Axonva’s full-funnel strategy.
               </p>
             </div>
@@ -90,7 +90,7 @@ export default function GrowthGraph() {
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${
+                    className={`font-inter font-semibold px-3 py-1.5 rounded-lg text-xs transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${
                       isActive
                         ? 'bg-gradient-to-r from-[#ffa21f] to-[#ff5722] text-white shadow-md shadow-[#ff5722]/30'
                         : 'text-slate-400 hover:text-white hover:bg-white/5'
@@ -107,19 +107,19 @@ export default function GrowthGraph() {
           {/* Quick Stats Strip */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/5">
-              <span className="text-[11px] font-medium text-slate-400 uppercase tracking-wider block">
+              <span className="text-[11px] font-inter font-medium text-slate-400 uppercase tracking-wider block">
                 {currentMetric.statLabel}
               </span>
-              <div className="text-2xl sm:text-3xl font-extrabold text-white mt-0.5 tracking-tight">
+              <div className="text-2xl sm:text-3xl font-sora font-extrabold text-white mt-0.5 tracking-tight">
                 {currentMetric.stat}
               </div>
             </div>
 
             <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/5">
-              <span className="text-[11px] font-medium text-slate-400 uppercase tracking-wider block">
+              <span className="text-[11px] font-inter font-medium text-slate-400 uppercase tracking-wider block">
                 Scale Velocity
               </span>
-              <div className="text-2xl sm:text-3xl font-extrabold text-emerald-400 mt-0.5 flex items-center gap-1 tracking-tight">
+              <div className="text-2xl sm:text-3xl font-sora font-extrabold text-emerald-400 mt-0.5 flex items-center gap-1 tracking-tight">
                 {currentMetric.growth}
                 <ArrowUpRight className="w-5 h-5" />
               </div>

@@ -46,7 +46,7 @@ export default function Navbar() {
                   <a
                     key={link.path}
                     href={link.path}
-                    className="px-3.5 py-1.5 text-xs xl:text-sm font-medium text-slate-300 hover:text-white transition-colors rounded-full hover:bg-white/5"
+                    className="font-inter font-medium px-3.5 py-1.5 text-xs xl:text-sm text-slate-300 hover:text-white transition-colors rounded-full hover:bg-white/5"
                   >
                     {link.label}
                   </a>
@@ -58,7 +58,7 @@ export default function Navbar() {
                   key={link.path}
                   to={link.path}
                   className={({ isActive }) =>
-                    `px-3.5 py-1.5 text-xs xl:text-sm font-medium transition-all rounded-full ${
+                    `font-inter font-medium px-3.5 py-1.5 text-xs xl:text-sm transition-all rounded-full ${
                       isActive
                         ? 'text-white bg-gradient-to-r from-[#ffa21f]/20 to-[#ff5722]/30 border border-[#ff5722]/40 shadow-sm shadow-[#ff5722]/20'
                         : 'text-slate-300 hover:text-white hover:bg-white/5'
@@ -136,7 +136,7 @@ export default function Navbar() {
                       key={link.path}
                       href={link.path}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-200 hover:text-white hover:bg-white/[0.06] transition-colors"
+                      className="font-inter font-medium px-4 py-2.5 rounded-xl text-sm text-slate-200 hover:text-white hover:bg-white/[0.06] transition-colors"
                     >
                       {link.label}
                     </a>
@@ -149,9 +149,9 @@ export default function Navbar() {
                     to={link.path}
                     onClick={() => setMobileMenuOpen(false)}
                     className={({ isActive }) =>
-                      `px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${
+                      `font-inter font-medium px-4 py-2.5 rounded-xl text-sm transition-all ${
                         isActive
-                          ? 'text-[#ffa21f] bg-[#ff5722]/15 border border-[#ff5722]/30 font-bold'
+                          ? 'text-[#ffa21f] bg-[#ff5722]/15 border border-[#ff5722]/30'
                           : 'text-slate-200 hover:text-white hover:bg-white/[0.06]'
                       }`
                     }

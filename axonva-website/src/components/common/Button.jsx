@@ -17,9 +17,9 @@ export default function Button({
   ...props
 }) {
   const sizeClasses = {
-    sm: 'px-4 py-2 text-xs font-semibold rounded-lg gap-1.5',
-    md: 'px-6 py-3 text-sm font-semibold rounded-xl gap-2',
-    lg: 'px-8 py-4 text-base font-bold rounded-2xl gap-2.5',
+    sm: 'px-4 py-2 text-xs font-sora font-semibold rounded-lg gap-1.5',
+    md: 'px-6 py-3 text-sm font-sora font-semibold rounded-xl gap-2',
+    lg: 'px-8 py-4 text-base font-sora font-semibold rounded-2xl gap-2.5',
   };
 
   const variantClasses = {
@@ -35,7 +35,7 @@ export default function Button({
       'bg-transparent text-slate-300 hover:text-white hover:bg-white/5 border border-transparent',
   };
 
-  const combinedClasses = `inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer select-none ${sizeClasses[size] || sizeClasses.md} ${variantClasses[variant] || variantClasses.primary} ${disabled ? 'opacity-50 pointer-events-none cursor-not-allowed' : ''} ${className}`;
+  const combinedClasses = `inline-flex items-center justify-center font-sora font-semibold transition-all duration-200 cursor-pointer select-none ${sizeClasses[size] || sizeClasses.md} ${variantClasses[variant] || variantClasses.primary} ${disabled ? 'opacity-50 pointer-events-none cursor-not-allowed' : ''} ${className}`;
 
   const content = (
     <>

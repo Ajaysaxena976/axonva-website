@@ -117,7 +117,7 @@ export function AnimatedLogo({ stacked = false, height = 44, className = "" }) {
         />
       </div>
 
-      <span className="txt">
+      <span className="txt font-sora">
         <b>Axonva</b>
         <i>Ventures</i>
       </span>

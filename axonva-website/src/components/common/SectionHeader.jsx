@@ -24,7 +24,7 @@ export default function SectionHeader({
         </div>
       )}
 
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+      <h2 className="font-sora font-bold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-white leading-tight">
         {title}{' '}
         {highlight && (
           <span className="text-gradient-fire block sm:inline mt-1 sm:mt-0">
@@ -34,7 +34,7 @@ export default function SectionHeader({
       </h2>
 
       {description && (
-        <p className="mt-4 text-base sm:text-lg text-slate-300/80 leading-relaxed max-w-2xl mx-auto">
+        <p className="font-inter font-normal mt-4 text-base sm:text-lg text-slate-300/80 leading-relaxed max-w-2xl mx-auto">
           {description}
         </p>
       )}

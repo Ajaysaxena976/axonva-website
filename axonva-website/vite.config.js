@@ -10,4 +10,9 @@ export default defineConfig({
     tailwindcss(),
 
   ],
+   server: {
+    allowedHosts: [
+      'blocking-filed-pottery-mic.trycloudflare.com',
+    ],
+  },
 })

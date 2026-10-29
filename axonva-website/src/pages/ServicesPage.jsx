@@ -65,27 +65,27 @@ export default function ServicesPage() {
       : CORE_SERVICES.filter((s) => s.categoryId === selectedCategory);
 
   return (
-    <div className="relative py-12 lg:py-20">
+    <div className="relative py-6 lg:py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Page Hero */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <Badge variant="fire" className="mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-8">
+          {/* <Badge variant="fire" className="mb-4">
             Full-Spectrum Digital Capabilities
-          </Badge>
+          </Badge> */}
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+          <h1 className="font-sora font-extrabold text-4xl sm:text-5xl lg:text-4xl text-white tracking-tight leading-tight">
             Our 10 Core Services,{' '}
             <span className="text-gradient-fire block mt-1">
               Organized for Exponential Growth
             </span>
           </h1>
 
-          <p className="mt-5 text-base sm:text-lg text-slate-300 leading-relaxed">
+          <p className="font-inter font-normal mt-5  text-[14px] text-slate-300 leading-relaxed">
             We don't offer generic isolated gigs. Every service at Axonva Ventures is built with high-velocity code, performance data, and modern design to generate measurable enterprise value.
           </p>
 
           {/* Core Promise reminder */}
-          <div className="mt-6 inline-block p-3 px-5 rounded-xl bg-white/[0.04] border border-[#ff5722]/30 text-xs text-[#ffa21f] font-semibold">
+          <div className="mt-6 inline-block p-3 px-5 rounded-xl bg-white/[0.04] border border-[#ff5722]/30 text-xs text-[#ffa21f] font-inter font-medium">
             “{SITE_CONFIG.corePromiseEn}”
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function ServicesPage() {
         <div className="flex flex-wrap items-center justify-center gap-2 mb-14">
           <button
             onClick={() => setSelectedCategory('all')}
-            className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+            className={`font-inter font-semibold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all cursor-pointer ${
               selectedCategory === 'all'
                 ? 'bg-gradient-to-r from-[#ffa21f] to-[#ff5722] text-white shadow-lg shadow-[#ff5722]/30 border border-white/20'
                 : 'bg-[#120f3d]/70 text-slate-300 hover:text-white hover:bg-[#1a1656] border border-white/10'
@@ -111,7 +111,7 @@ export default function ServicesPage() {
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
+                className={`font-inter font-semibold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all cursor-pointer flex items-center gap-1.5 ${
                   isActive
                     ? 'bg-gradient-to-r from-[#ffa21f] via-[#ff5722] to-[#d40d0d] text-white shadow-lg shadow-[#ff5722]/30 border border-white/20'
                     : 'bg-[#120f3d]/70 text-slate-300 hover:text-white hover:bg-[#1a1656] border border-white/10'
@@ -152,11 +152,11 @@ export default function ServicesPage() {
                                 Service {service.serviceNumber}
                               </span>
                               <span className="text-slate-500 text-xs">•</span>
-                              <span className="text-xs font-medium text-slate-400">
+                              <span className="text-xs font-inter font-medium text-slate-400">
                                 {service.categoryName}
                               </span>
                             </div>
-                            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+                            <h2 className="font-sora font-semibold text-2xl sm:text-3xl text-white tracking-tight">
                               {service.title}
                             </h2>
                           </div>
@@ -250,7 +250,7 @@ export default function ServicesPage() {
         </div>
 
         {/* Bottom Banner */}
-        <div className="mt-20 p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-[#170e42] via-[#24113b] to-[#140b36] border border-[#ff5722]/40 text-center relative overflow-hidden">
+        <div className="mt-10 p-8 sm:p-6 rounded-3xl bg-gradient-to-r from-[#170e42] via-[#24113b] to-[#140b36] border border-[#ff5722]/40 text-center relative overflow-hidden">
           <h3 className="text-2xl sm:text-3xl font-black text-white">
             Need a Custom Growth Package Combining Multiple Services?
           </h3>

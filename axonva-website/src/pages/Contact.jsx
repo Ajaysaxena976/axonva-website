@@ -63,18 +63,16 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <Badge variant="fire" className="mb-4">
-            Direct Founder Access
-          </Badge>
+       
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+          <h1 className="font-sora font-extrabold text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-tight">
             Let’s Build Something{' '}
             <span className="text-gradient-fire block mt-1">
               Remarkable Together.
             </span>
           </h1>
 
-          <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
+          <p className="font-inter font-normal mt-4 text-[14px] text-slate-300 leading-relaxed">
             Have a project in mind, need a tech team, or want to scale your ROAS with Google & Meta ads? Send us your brief and we will reply within 2 business hours.
           </p>
         </div>
@@ -85,7 +83,7 @@ export default function Contact() {
             <div className="space-y-6">
               {/* Direct Info Card */}
               <div className="p-6 rounded-3xl bg-[#0e0b36]/80 border border-white/10 shadow-xl backdrop-blur-xl">
-                <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                <h3 className="font-sora font-semibold text-lg text-white mb-4 flex items-center gap-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#ff5722]" />
                   Direct Consultation Channels
                 </h3>
@@ -167,7 +165,7 @@ export default function Contact() {
               <div className="p-4 rounded-2xl bg-gradient-to-r from-[#ff5722]/15 to-transparent border border-[#ff5722]/30 flex items-center gap-3">
                 <Zap className="w-5 h-5 text-[#ff7a00] shrink-0" />
                 <div className="text-xs text-slate-200">
-                  <strong className="text-white block">2-Hour First Response Guarantee</strong>
+                 
                   We value your time. No robotic automated queues—talk to founders and real engineers.
                 </div>
               </div>
@@ -208,7 +206,7 @@ export default function Contact() {
                       href={SOCIAL_LINKS.whatsapp}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 text-white font-bold text-xs"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 text-white font-sora font-semibold text-xs"
                     >
                       <MessageSquare className="w-4 h-4" />
                       <span>Ping us on WhatsApp Now</span>
@@ -219,14 +217,14 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="pb-3 border-b border-white/10 flex items-center justify-between">
                     <div>
-                      <h3 className="text-xl font-bold text-white tracking-tight">
+                      <h3 className="font-sora font-semibold text-xl text-white tracking-tight">
                         Project & Growth Brief
                       </h3>
-                      <p className="text-xs text-slate-400 mt-0.5">
+                      <p className="font-inter font-normal text-xs text-slate-400 mt-0.5">
                         Fill in your details below for a tailored proposal.
                       </p>
                     </div>
-                    <Badge variant="fire">Fast Track</Badge>
+                    
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

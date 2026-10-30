@@ -328,10 +328,10 @@ export default function Contact() {
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-xl bg-[#0c092c] border border-white/10 text-white text-sm focus:outline-none focus:border-[#ff5722] transition-colors cursor-pointer"
                       >
-                        <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
-                        <option value="₹50,000 – ₹1,50,000">₹50,000 – ₹1,50,000</option>
-                        <option value="₹1,50,000 – ₹3,00,000">₹1,50,000 – ₹3,00,000</option>
-                        <option value="₹3,00,000+ (Enterprise)">₹3,00,000+ (Enterprise Retainer)</option>
+                        <option value="₹5,000 – ₹10,000">₹5,000 – ₹10,000</option>
+                        <option value="₹10,000 – ₹25,000">₹10,000 – ₹25,000</option>
+                        <option value="₹25000 – ₹40,000">₹25000 – ₹40,000</option>
+                        <option value="₹40,000+ (Enterprise)">₹40,000+ (Enterprise Retainer)</option>
                       </select>
                     </div>
                   </div>

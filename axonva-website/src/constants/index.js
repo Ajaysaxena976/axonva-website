@@ -25,10 +25,10 @@ export const CONTACT_INFO = {
   whatsappNumber: "+917417114056",
   whatsappMessage: "Hi Axonva Ventures, I want to discuss a project for my business growth.",
   address: {
-    city: "Delhi NCR / Gurugram",
-    state: "Haryana",
+    city: "Noida, Uttar Pradesh",
+    state: "Uttar Pradesh",
     country: "India",
-    full: "DLF Cyber City, Sector 24, Gurugram, Delhi NCR 122002, India",
+    full: "Office no. SF-27, Gaur world smart street , Near ek murti , Gaur city 201318, India",
   },
   workingHours: "Monday – Saturday: 9:30 AM – 7:30 PM IST",
   supportHours: "24/7 Client Support & Campaign Monitoring",

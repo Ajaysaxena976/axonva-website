@@ -38,6 +38,7 @@ import {
   TESTIMONIALS,
   FAQS,
 } from '../constants';
+import SEO from '../components/SEO';
 
 
 // Icon map for core services
@@ -67,6 +68,13 @@ export default function Home() {
 
   return (
     <div className="relative overflow-hidden">
+
+<SEO
+  title="Axonva Ventures | Software Development Company"
+  description="Axonva Ventures delivers web development, mobile apps, custom software and digital growth solutions to help businesses scale."
+  keywords="Software Development Company, Web Development Company, Mobile App Development, Digital Solutions, Custom Software Development"
+  path="/"
+/>
 
   
 

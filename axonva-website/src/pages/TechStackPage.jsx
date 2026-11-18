@@ -18,6 +18,7 @@ import Card3D from '../components/common/Card3D';
 import Badge from '../components/common/Badge';
 import Button from '../components/common/Button';
 import { TECH_STACKS, SOCIAL_LINKS } from '../constants';
+import SEO from '../components/SEO';
 
 const CATEGORIES = [
   { id: 'all', label: 'All Technologies' },
@@ -108,6 +109,14 @@ export default function TechStackPage() {
 
   return (
     <div className="relative py-6 lg:py-10">
+   <SEO
+        title="Technology Stack & Development Expertise | Axonva"
+        description="Discover our technology expertise in React.js, Next.js, Node.js, MongoDB, MERN Stack and React Native."
+        keywords="React Development, Next.js Development, MERN Stack, Node.js Development"
+        path="/tech-stack"
+      />
+
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

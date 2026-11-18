@@ -17,6 +17,7 @@ import {
   SITE_CONFIG,
   IMPACT_METRICS,
 } from '../constants';
+import SEO from '../components/SEO';
 
 export default function About() {
   const values = [
@@ -48,6 +49,13 @@ export default function About() {
 
   return (
     <div className="relative py-6 lg:py-10">
+<SEO
+  title="About Axonva Ventures | Our Company & Expertise"
+  description="Learn about Axonva Ventures, our technology expertise, development approach and commitment to building scalable digital solutions."
+  keywords="About Axonva Ventures, Software Company, Technology Solutions, Digital Innovation, Software Development"
+  path="/about"
+/>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Page Hero */}
         <div className="text-center max-w-3xl mx-auto mb-16">

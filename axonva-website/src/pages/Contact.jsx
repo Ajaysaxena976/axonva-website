@@ -21,6 +21,7 @@ import {
   CORE_SERVICES,
   SITE_CONFIG,
 } from '../constants';
+import SEO from '../components/SEO';
 
 export default function Contact() {
   const location = useLocation();
@@ -60,6 +61,14 @@ export default function Contact() {
 
   return (
     <div className="relative py-12 lg:py-20">
+
+<SEO
+  title="Contact Axonva Ventures | Start Your Project"
+  description="Contact Axonva Ventures to discuss your website, software, mobile app or digital marketing project. Let's build something great together."
+  keywords="Contact Axonva Ventures, Software Development Consultation, Website Development Enquiry, Business Technology Solutions"
+  path="/contact"
+/>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

@@ -19,6 +19,7 @@ import {
   SITE_CONFIG,
   SOCIAL_LINKS,
 } from '../constants';
+import SEO from '../components/SEO';
 
 export default function GrowthPage() {
   const funnels = [
@@ -65,6 +66,14 @@ export default function GrowthPage() {
 
   return (
     <div className="relative py-6 lg:py-10">
+
+<SEO
+  title="Digital Growth & Marketing Solutions | Axonva Ventures"
+  description="Grow your business with digital marketing, paid advertising, analytics, conversion optimization and data-driven growth strategies."
+  keywords="Digital Marketing Services, Google Ads, Meta Ads, Paid Advertising, Business Growth, Conversion Optimization"
+  path="/growth"
+/>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Page Hero */}
         <div className="text-center max-w-3xl mx-auto mb-16">

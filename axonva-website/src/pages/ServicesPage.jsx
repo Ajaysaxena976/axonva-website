@@ -27,6 +27,7 @@ import {
   SOCIAL_LINKS,
   SITE_CONFIG,
 } from '../constants';
+import SEO from '../components/SEO';
 
 const iconMap = {
   Globe: Globe,
@@ -66,6 +67,14 @@ export default function ServicesPage() {
 
   return (
     <div className="relative py-6 lg:py-10">
+
+<SEO
+  title="Software Development & Digital Services | Axonva"
+  description="Explore Axonva Ventures services including website development, custom software, mobile applications, e-commerce solutions and digital marketing."
+  keywords="Website Development Services, Custom Software Development, Mobile App Development, E-commerce Development, Digital Marketing Services"
+  path="/services"
+/>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Page Hero */}
         <div className="text-center max-w-3xl mx-auto mb-8">

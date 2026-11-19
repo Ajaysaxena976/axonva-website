@@ -70,9 +70,9 @@ export default function Home() {
     <div className="relative overflow-hidden">
 
 <SEO
-  title="Axonva Ventures | Software Development Company"
-  description="Axonva Ventures delivers web development, mobile apps, custom software and digital growth solutions to help businesses scale."
-  keywords="Software Development Company, Web Development Company, Mobile App Development, Digital Solutions, Custom Software Development"
+  title="Axonva Ventures | Web Development & Digital Growth Agency"
+  description="Axonva Ventures is a premier web development and digital growth agency. We build high-performance Next.js websites, React Native mobile apps, and scale businesses with SEO, Google Ads & Meta Ads."
+  keywords="Axonva Ventures, Axonva, axonvaventures.in, Web Development Company, Next.js Development, React Native Apps, Mobile App Development, Custom Software Development, Digital Growth Agency, SEO Services India, Google Ads Agency, Meta Ads Expert, Full Stack Development, Performance Marketing"
   path="/"
 />
 

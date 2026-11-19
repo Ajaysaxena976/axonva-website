@@ -2,7 +2,7 @@
 import { Helmet } from "react-helmet-async";
 
 const SEO = ({ title, description, keywords, path }) => {
-  const baseUrl = "https://www.axonaventures.in";
+  const baseUrl = "https://www.axonvaventures.in";
 
   return (
     <Helmet>

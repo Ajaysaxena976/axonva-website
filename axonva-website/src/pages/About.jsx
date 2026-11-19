@@ -59,7 +59,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Page Hero */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-        \
+        
 
           <h1 className="font-sora font-extrabold text-4xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-tight">
             We Are The Growth Engine Behind{' '}
